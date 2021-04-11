@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		
+	Scanner num = new Scanner(System.in);
+		System.out.println("Input variable a:");
+		double a = 0;
+		
+			if(num.hasNextDouble()) {
+				a = num.nextDouble();
+												
+			}else {									
+			return;
+			}		
+			
+		
+	Scanner num1 = new Scanner(System.in);
+		System.out.println("Input variable b:");
+		double b = 0;
+			
+			if(num1.hasNextDouble()) {
+				b = num1.nextDouble();
+													
+			}else {									
+			return;
+			}
+				
+	Scanner num2 = new Scanner(System.in);
+		System.out.println("Input variable c:");
+		double c = 0;
+				
+				if(num2.hasNextDouble()) {
+					c = num2.nextDouble();
+														
+				}else {									
+				return;
+				}	
+		double z = (a-3)*(b/2) + c;
+					
+			System.out.print("The value of z is " + z);
+ }		
+}
