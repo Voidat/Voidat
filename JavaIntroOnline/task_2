@@ -1,0 +1,49 @@
+ Вычислить значение выражения по формуле 
+//(все переменные принимают действительные значения)
+
+import java.util.Scanner; //Импортировал класс Scanner из библиотеки Java.
+public class Main {
+
+	public static void main(String[] args) {
+		
+	Scanner num = new Scanner(System.in); //Объявил переменную num, которая относится к классу Scanner.
+		System.out.println("Input variable a:");//Использовал метод вывода строки с переводом на новую строку.
+		double a = 0;// Инициализировал переменную a.
+		
+			if(num.hasNextDouble()) {//Использовал условный оператор if. Если условие true, то выполняется if.
+				a = num.nextDouble();//Метод сканера, который считывает то, что ввел пользователь, а именно действительные значения.
+												
+			}else {//Использовал ключевое слово else. Если условие false, то выполняется оператор после else. 									
+			return;//Если условие false, то данный оператор выходит из метода.
+			}		
+			
+		
+	Scanner num1 = new Scanner(System.in);
+		System.out.println("Input variable b:");
+		double b = 0;
+			
+			if(num1.hasNextDouble()) {
+				b = num1.nextDouble();
+													
+			}else {									
+			return;
+			}
+				
+	Scanner num2 = new Scanner(System.in);
+		System.out.println("Input variable c:");
+		double c = 0;
+				
+				if(num2.hasNextDouble()) {
+					c = num2.nextDouble();
+														
+				}else {									
+				return;
+				}	
+		double d = b*b + 4*a*c;//Инциализировал переменную d, чтобы сократить итоговую формулу.
+		double q = (b + (Math.sqrt(d))/2*a - Math.pow(a, 3) + Math.pow(b, -2));//Итоговая формула.
+				// Методы из библиотеки Java:
+				//Math.sqrt - извлечение квадратного корня из аргумента
+				//Math.pow(a, b) - возведение а в степень b
+			System.out.print("The value of q is " + q);
+ }		
+}
